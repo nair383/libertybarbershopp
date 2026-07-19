@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Liberty Barber Shop | Moda & Estilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="services-page">
+
+    <!-- Fondo de partículas -->
+    <div class="luxury-particles" id="particles-container"></div>
+
+    <!-- 1. BARRA DE NAVEGACIÓN COMPACTA -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="logo1.jpeg" alt="Liberty Mini" class="nav-logo-img">
+                <span>Liberty</span>
+            </a>
+        </div>            
+        <!-- MENÚ DESPLEGABLE -->
+        <div class="nav-dropdown">
+            <button class="nav-btn-sm dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                Menú <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="dropdown-menu">
+                    <a href="index.html" class="dropdown-item"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="quienes-somos.html" class="dropdown-item"><i class="fa-solid fa-users"></i>Nosotros</a>
+                    <a href="galeria.html" class="dropdown-item"><i class="fa-solid fa-images"></i> Galería</a>
+                    <a href="servicios.html" class="dropdown-item"><i class="fa-solid fa-scissors"></i> Servicios</a>
+                    <a href="#faq" class="dropdown-item"><i class="fa-solid fa-circle-question"></i> Preguntas Frecuentes</a>
+                </div>
+        </div>
+    </nav>
+
+    <!-- 2. HÉROE DE LA PÁGINA (Título y Subtítulo) -->
+    <header class="page-header section-wrapper">
+        <div class="container">
+            <div class="brand-badge">Servicios y Barberos</div>
+        </div>
+    </header>
+    <section class="section-wrapper final-cta">
+    <div class="cta-inner-container">
+        <h2 class="content-title-cta">¿Listo para Vivir la Experiencia?</h2>
+        <p>Agenda tu hora hoy mismo y descubre por qué somos la barbería de elección en Puente Alto.</p>
+    </div>
+    </section>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="container">
+       
+        <!-- 3. SECCIÓN: SERVICIOS DESTACADOS (Combos con clase 'active' por defecto para que NO se vea vacío) -->
+        <section class="section-wrapper">
+            <h2 class="section-title">Combos Exclusivos</h2>
+            <div class="combos-new-grid">
+                
+                <!-- Básico (Cerrado por defecto) -->
+                <div class="combo-card-new" data-tilt>
+                    <div class="card-badge">Esencial</div>
+                    <div class="card-header-new">
+                        <h3>Servicio Básico</h3>
+                        <span class="price">$14.000</span>
+                    </div>
+                    <div class="combo-details">
+                        <ul class="combo-list">
+                            <li>Bebida de cortesía</li>
+                            <li>Lavado de cabello</li>
+                            <li>Corte de cabello</li>
+                            <li>Mascarilla puntos negros</li>
+                            <li>Aplicación de productos</li>
+                            <li>Depilación (oído y nariz)</li>
+                        </ul>
+                    </div>
+                    <button class="toggle-details-btn"><span>Ver detalles</span> <i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+
+                <!-- Medio (Destacado y Cerrado por defecto) -->
+                <div class="combo-card-new featured-new" data-tilt>
+                    <div class="card-badge premium-badge">Recomendado</div>
+                    <div class="card-header-new">
+                        <h3>Servicio Medio</h3>
+                        <span class="price">$20.000</span>
+                    </div>
+                    <div class="combo-details">
+                        <ul class="combo-list">
+                            <li>Bebida de cortesía</li>
+                            <li>Lavado de cabello</li>
+                            <li>Corte de cabello</li>
+                            <li>Perfilación de cejas</li>
+                            <li>Perfilación de barba</li>
+                            <li>Mascarilla puntos negros</li>
+                            <li>Depilación (oídos y nariz)</li>
+                            <li>Aplicación de productos</li>
+                        </ul>
+                    </div>
+                    <button class="toggle-details-btn"><span>Ver detalles</span> <i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+
+                <!-- Premium (Cerrado por defecto) -->
+                <div class="combo-card-new" data-tilt>
+                    <div class="card-badge">V.I.P</div>
+                    <div class="card-header-new">
+                        <h3>Servicio Premium</h3>
+                        <span class="price">$25.000</span>
+                    </div>
+                    <div class="combo-details">
+                        <ul class="combo-list">
+                            <li>Bebida de cortesía</li>
+                            <li>Lavado de cabello</li>
+                            <li>Corte de cabello</li>
+                            <li>Perfilación de cejas</li>
+                            <li>Perfilación de barba</li>
+                            <li>Limpieza facial profunda</li>
+                            <li>Depilación (oídos y nariz)</li>
+                            <li>10 min. de masaje relajante</li>
+                            <li>Aplicación de productos</li>
+                        </ul>
+                    </div>
+                    <button class="toggle-details-btn"><span>Ver detalles</span> <i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN CARTA DE PRECIOS -->
+        <section id="carta" class="section-wrapper">
+            <h2 class="section-title">Servicios Individuales</h2>
+            
+            <div class="menu-dual-column">
+                <!-- Bloque 1: Cortes y Servicios -->
+                <div class="menu-block">
+                    <h3><i class="fa-solid fa-scissors gold-icon-small"></i> Servicios & Valores</h3>
+                    <div class="menu-list-new">
+                        <div class="menu-item-new">
+                            <span class="item-name">Corte de Cabello</span>
+                            <span class="item-price">$10.000</span>
+                        </div>
+                        <div class="menu-item-new">
+                            <span class="item-name">Perfilación de Barba</span>
+                            <span class="item-price">$7.000</span>
+                        </div>
+                        <div class="menu-item-new">
+                            <span class="item-name">Perfilación de Cejas</span>
+                            <span class="item-price">$2.000</span>
+                        </div>
+                        <div class="menu-item-new">
+                            <span class="item-name">Limpieza Facial</span>
+                            <span class="item-price">$10.000</span>
+                        </div>
+                        <div class="menu-item-new">
+                            <span class="item-name">Líneas Desde</span>
+                            <span class="item-price">$2.000</span>
+                        </div>
+                        <div class="menu-item-new">
+                            <span class="item-name">Lavado de Cabello</span>
+                            <span class="item-price">$2.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque 2: Colorimetría -->
+                <div class="menu-block">
+                    <h3><i class="fa-solid fa-wand-magic-sparkles gold-icon-small"></i> Colorimetría <small class="eval-tag">(Previa Evaluación)</small></h3>
+                    <div class="menu-list-new">
+                        <div class="menu-item-new">
+                            <span class="item-name">Platinado Global + Corte</span>
+                            <span class="item-price">$100.000</span>
+                        </div>
+                        <div class="menu-item-new">
+                            <span class="item-name">Visos + Corte</span>
+                            <span class="item-price">$80.000</span>
+                        </div>
+                        <div class="menu-item-new">
+                            <span class="item-name">Colores Fantasías Desde</span>
+                            <span class="item-price">$40.000</span>
+                        </div>
+                        <div class="menu-item-new">
+                            <span class="item-name">Ondulaciones + Corte</span>
+                            <span class="item-price">$60.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. APARTADO DE BARBEROS (Actualizado con fotos de la barbería para romper la monotonía) -->
+        <!-- 5. APARTADO DE BARBEROS (Desplegables interactivos) -->
+        <section id="barberos" class="section-wrapper">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="barbers-grid">
+                
+                <!-- Tarjeta Barbero 1 -->
+                <div class="barber-card-collapsible" data-tilt>
+                    <div class="barber-badge">experto</div>
+                    <div class="barber-img-container">
+                        <img src="barbero_manuel.jpeg" alt="José Manuel" class="barber-logo-img-card">
+                    </div>
+                    <div class="barber-info">
+                        <h3 class="barber-name">Manuel Paredes</h3>
+                        <p class="barber-specialty">Barbero Colorista Profesional</p>
+                    </div>
+                    
+                    <!-- Contenedor Desplegable -->
+                    <div class="barber-extra-content">
+                        <div class="barber-action">
+                            <a href="https://wa.me/56931488104?text=Hola!%20me%20gustaria%20agendar%20una%20hora,%20me%20indica%20cuales%20tiene%20disponible." target="_blank" class="barber-wsp-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Reservar
+                            </a>
+
+                            <div class="barber-description-text">Soy Manuel Paredes, conocido como Manuel_styl0, barbero, colorista y asesor de imagen con más de 5 años de experiencia transformando estilos y potenciando la confianza de cada persona que se sienta en mi silla.
+
+Me especializo en cortes clásicos y modernos, degradados, diseños personalizados, colorimetría y ondulación, ofreciendo un servicio adaptado a la personalidad y necesidades de cada cliente.
+
+Lo que más me define es la disciplina, el amor por este arte y el compromiso con la excelencia. Trabajo con profesionalismo, pasión, limpieza, puntualidad y un trato cercano, porque creo que una buena experiencia es tan importante como un gran resultado.</div>                        </div>
+                    </div>
+                    
+                    <button class="barber-toggle-btn">
+                        <span>Reservar</span> <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Tarjeta Barbero 2 -->
+                <div class="barber-card-collapsible" data-tilt>
+                    <div class="barber-badge">Experto</div>
+                    <div class="barber-img-container">
+                        <img src="barberoender.jpeg" alt="Barbero 2" class="barber-logo-img-card">
+                    </div>
+                    <div class="barber-info">
+                        <h3 class="barber-name">Ender García</h3>
+                        <p class="barber-specialty">Barbero  Profesional</p>
+                    </div>
+                    
+                    <div class="barber-extra-content">
+                        <div class="barber-action">
+                            <a href="https://wa.me/56926993031?text=Hola!%20me%20gustaria%20agendar%20una%20hora,%20me%20indica%20cuales%20tiene%20disponible." target="_blank" class="barber-wsp-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Reservar
+                            </a>
+                            <div class="barber-description-text">Soy Ender García, barbero profesional con 8 años de experiencia. Me dedico a la barbería y a la asesoría de imagen, ayudando a cada cliente a encontrar el estilo que mejor refleja su personalidad. Mi historia comenzó por pasión y por las ganas de salir adelante. Gracias al esfuerzo y la humildad, he logrado construir mi camino desde cero en otro país. Para mí, ser barbero significa trabajar con disciplina, responsabilidad y compromiso, buscando siempre ofrecer un servicio de calidad. Mi mayor meta es alcanzar el éxito y brindar bienestar a mi familia a través de mi trabajo. Creo firmemente que todo es posible cuando te enfocas en ser mejor.</div>
+                        </div>
+                    </div>
+                    
+                    <button class="barber-toggle-btn">
+                        <span>Reservar</span> <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Tarjeta Barbero 3 -->
+                <div class="barber-card-collapsible" data-tilt>
+                    <div class="barber-badge">Experto</div>
+                    <div class="barber-img-container">
+                        <img src="barbero_danko.jpeg" alt="Barbero 3" class="barber-logo-img-card">
+                    </div>
+                    <div class="barber-info">
+                        <h3 class="barber-name">Danko Gómez</h3>
+                        <p class="barber-specialty">Barbero Profesional</p>
+                    </div>
+                    
+                    <div class="barber-extra-content">
+                        <div class="barber-action">
+                            <a href="https://wa.me/56940237702?text=Hola!%20me%20gustaria%20agendar%20una%20hora,%20me%20indica%20cuales%20tiene%20disponible." target="_blank" class="barber-wsp-btn">
+                            <i class="fa-brands fa-whatsapp"></i> Reservar
+                            </a>
+                            <div class="barber-description-text">barbero especializado en todo tipo de cortes masculinos, desde los clásicos hasta los más modernos y arriesgados. Trabajo con tijera, máquinas y navaja cuidando cada línea y transición, para que cada cliente pueda expresar su estilo propio. Me apasiona escuchar lo que buscas, asesorarte según tu tipo de cabello y rutina, y entregar un servicio profesional donde la calidad, la higiene y el respeto por tu tiempo son tan importantes como el resultado final.</div>
+                        </div>
+                    </div>
+                    
+                    <button class="barber-toggle-btn">
+                        <span>Reservar</span> <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Tarjeta Barbero 4 -->
+                <div class="barber-card-collapsible" data-tilt>
+                    <div class="barber-badge">experto</div>
+                    <div class="barber-img-container">
+                        <img src="barbero_albenis.jpeg" alt="Barbero 4" class="barber-logo-img-card">
+                    </div>
+                    <div class="barber-info">
+                        <h3 class="barber-name">Albenis Silva</h3>
+                        <p class="barber-specialty">Barbero Profesional</p>
+                    </div>
+                    
+                    <div class="barber-extra-content">
+                        <div class="barber-action">
+                            <a href="https://wa.me/56990207065?text=Hola!%20me%20gustaria%20agendar%20una%20hora,%20me%20indica%20cuales%20tiene%20disponible." target="_blank" class="barber-wsp-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Reservar
+                            </a>
+                            <div class="barber-description-text">Soy Albenis Silva, un barbero apasionado por transformar la imagen y fortalecer la confianza de cada cliente. Me especializo en cortes modernos, degradados y detalles precisos, siempre brindando un servicio profesional y personalizado. Mi compromiso es mantenerme en constante aprendizaje para ofrecer las últimas tendencias y la mejor experiencia en cada visita. Más que realizar un corte, mi objetivo es que cada persona salga sintiéndose segura, renovada y satisfecha con mi trabajo.</div>
+                        </div>
+                    </div>
+                    
+                    <button class="barber-toggle-btn">
+                        <span>Reservar</span> <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PREMIUM -->
+    <footer class="luxury-footer">
+        <div class="footer-content">
+            <img src="logo2.jpeg" alt="Logo Liberty" class="footer-logo-img">
+            <p class="footer-rights">&copy; 2026 Liberty Barber Shop. Todos los derechos reservados.</p>
+            <p class="dev-credits">Diseño exclusivo por Nivvux</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
