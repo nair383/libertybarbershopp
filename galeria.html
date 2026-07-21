@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Liberty Barber Shop | Moda & Estilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="logo1.jpeg" alt="Liberty Mini" class="nav-logo-img">
+                <span>Liberty</span>
+            </a>
+        </div>
+        <div class="nav-actions">
+            <div class="nav-dropdown">
+                <button class="nav-btn-sm dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                    Menú <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="index.html" class="dropdown-item"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="quienes-somos.html" class="dropdown-item"><i class="fa-solid fa-users"></i> Nosotros</a>
+                    <a href="galeria.html" class="dropdown-item"><i class="fa-solid fa-images"></i> Galería</a>
+                    <a href="servicios.html" class="dropdown-item"><i class="fa-solid fa-scissors"></i> Servicios</a>
+                    <a href="tienda.html" class="dropdown-item"><i class="fa-solid fa-store"></i> Tienda</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="galeria-instalaciones" class="section-wrapper">
+        <h2 class="section-title">Nuestras Instalaciones</h2>
+        <div class="gallery-slider-container">
+            <div class="gallery-slider" data-tilt>
+                <div class="gallery-track">
+                    <div class="gallery-slide active"><div class="gallery-frame"><img src="fachadadia.jpeg" alt="Fachada"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="lavadocabello.jpeg" alt="Zona lavado"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="mueble.jpeg" alt="Bar"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="panorama.jpeg" alt="Estación"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="interior5.jpeg" alt="Estación"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="interior6.jpeg" alt="Estación"></div></div>
+                </div>
+            </div>
+            <button class="slider-btn prev-btn" aria-label="Anterior">&#10218;</button>
+            <button class="slider-btn next-btn" aria-label="Siguiente">&#10219;</button>
+        </div>
+    </section>
+    <!-- SECCIÓN DE GALERÍA 1 -->
+    <section id="galeria" class="section-wrapper" style="padding-top: 120px; margin-top: 20px;">
+        <h2 class="section-title">Nuestros Trabajos</h2>
+        <div class="gallery-slider-container">
+            <div class="gallery-slider" data-tilt>
+                <div class="gallery-track">
+                    <div class="gallery-slide active"><div class="gallery-frame"><img src="foto1.jpeg" alt="Corte Premium"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="foto2.jpeg" alt="Perfilado de Barba"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="foto3.jpeg" alt="Fade Moderno"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="foto4.jpeg" alt="Diseño de Autor"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="foto5.jpeg" alt="Peinado Texturizado"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="niño1.jpeg" alt="Peinado Texturizado"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="niño2.jpeg" alt="Peinado Texturizado"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="niño3.jpeg" alt="Peinado Texturizado"></div></div>
+                </div>
+            </div>
+            <button class="slider-btn prev-btn" aria-label="Anterior">&#10218;</button>
+            <button class="slider-btn next-btn" aria-label="Siguiente">&#10219;</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE GALERÍA 2 -->
+    <section id="galeria-instalaciones" class="section-wrapper">
+        <h2 class="section-title">Colorimetria</h2>
+        <div class="gallery-slider-container">
+            <div class="gallery-slider" data-tilt>
+                <div class="gallery-track">
+                    <div class="gallery-slide active"><div class="gallery-frame"><img src="colorimetria1.jpeg" alt="Fachada"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="colorimetria2.jpeg" alt="Zona lavado"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="colorimetria3.jpeg" alt="Bar"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="colorimetria4.jpeg" alt="Estación"></div></div>
+                    <div class="gallery-slide"><div class="gallery-frame"><img src="colorimetria5.jpeg" alt="Estación"></div></div>
+                </div>
+            </div>
+            <button class="slider-btn prev-btn" aria-label="Anterior">&#10218;</button>
+            <button class="slider-btn next-btn" aria-label="Siguiente">&#10219;</button>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX (El visor de fotos tipo PowerPoint) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <button class="lb-btn lb-prev" onclick="changeImage(-1)">&#10218;</button>
+        <img class="lightbox-content" id="full-img" alt="Vista ampliada">
+        <button class="lb-btn lb-next" onclick="changeImage(1)">&#10219;</button>
+    </div>
+
+     <footer class="luxury-footer">
+        <div class="footer-content">
+            <img src="logo2.jpeg" alt="Logo Liberty" class="footer-logo-img">
+            <p class="footer-rights">&copy; 2026 Liberty Barber Shop. Todos los derechos reservados.</p>
+            <p class="dev-credits">Diseño exclusivo por Nivvux</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Liberty Barber Shop | Moda & Estilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="services-page">
+
+    <!-- Fondo de partículas -->
+    <div class="luxury-particles" id="particles-container"></div>
+
+    <!-- 1. BARRA DE NAVEGACIÓN COMPACTA -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="logo1.jpeg" alt="Liberty Mini" class="nav-logo-img">
+                <span>Liberty</span>
+            </a>
+        </div>            
+        <!-- MENÚ DESPLEGABLE -->
+        <div class="nav-dropdown">
+            <button class="nav-btn-sm dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                Menú <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="dropdown-menu">
+                <a href="index.html" class="dropdown-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="quienes-somos.html" class="dropdown-item"><i class="fa-solid fa-users"></i>Nosotros</a>
+                <a href="galeria.html" class="dropdown-item"><i class="fa-solid fa-images"></i> Galería</a>
+                <a href="servicios.html" class="dropdown-item"><i class="fa-solid fa-scissors"></i> Servicios</a>
+                <a href="tienda.html" class="dropdown-item"><i class="fa-solid fa-store"></i> Tienda</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HÉROE DE LA PÁGINA (Título y Subtítulo) -->
+    <header class="page-header section-wrapper">
+        <div class="container">
+            <div class="brand-badge">Productos & Accesorios</div>
+            <h1 class="section-title">Nuestra Tienda</h1>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="container">
+       
+        <!-- SECCIÓN DE ARTÍCULOS / TIENDA -->
+        <section class="section-wrapper" style="padding-top: 20px;">
+            <!-- Tarjeta de Combo: Cera + Polvo -->
+<div class="combo-card-new featured-new" data-tilt>
+    <div class="card-badge premium-badge">Combo Exclusivo</div>
+    
+    <!-- Carrusel con ambas fotos -->
+    <div class="gallery-slider-container" style="margin-bottom: 20px;">
+        <div class="gallery-slider">
+            <div class="gallery-track">
+                <!-- Imagen 1: Cera Gel Wax -->
+                <div class="gallery-slide active">
+                    <div class="gallery-frame">
+                        <img src="articulo1.jpeg" alt="Cera Fijadora Rocco">
+                    </div>
+                </div>
+                <!-- Imagen 2: Polvo Texturizador -->
+                <div class="gallery-slide">
+                    <div class="gallery-frame">
+                        <img src="articulo1.2.jpeg" alt="Polvo Texturizador Roco">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controles del carrusel -->
+        <button class="slider-btn prev-btn" aria-label="Anterior">&#10218;</button>
+        <button class="slider-btn next-btn" aria-label="Siguiente">&#10219;</button>
+        
+        <!-- Puntos indicadores del carrusel -->
+        <div class="slider-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 15px;">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+        </div>
+    </div>
+
+    <!-- Título y precio -->
+    <div class="card-header-new">
+        <h3>Combo: Cera Fijadora + Polvo Texturizador</h3>
+        <span class="price">$22.000</span> <!-- Actualiza el precio según corresponda -->
+    </div>
+
+    <!-- Menú Desplegable con los textos solicitados -->
+    <div class="combo-details">
+        
+        <h4 style="color: var(--color-gold); font-size: 0.9rem; margin-bottom: 10px;">Cera Fijadora (Gel Wax)</h4>
+        <ul class="combo-list" style="margin-bottom: 15px;">
+            <li>Cera Fijadora para un uso prolongado.</li>
+            <li>Fijación extra fuerte para estilos duraderos.</li>
+            <li>Consistencia en gel para fácil aplicación.</li>
+            <li>Dermatológicamente testeada, apta para todo tipo de cabello.</li>
+            <li>Composición vegana y libre de gluten.</li>
+            <li>Envase plástico ligero y fácil de transportar.</li>
+        </ul>
+
+        <h4 style="color: var(--color-gold); font-size: 0.9rem; margin-bottom: 10px;">Polvo Texturizador (Volume Powder)</h4>
+        <ul class="combo-list">
+            <li>Aporta volumen y textura al cabello.</li>
+            <li>Efecto mate natural.</li>
+            <li>Textura ligera y fácil aplicación.</li>
+            <li>No deja sensación aceitosa.</li>
+            <li>Fijación flexible para uso diario.</li>
+            <li>Ideal para distintos tipos de cabello.</li>
+        </ul>
+    </div>
+
+    <!-- Botón para accionar el menú desplegable -->
+    <button class="toggle-details-btn">
+        <span>Ver detalles</span> <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <!-- Botón de compra -->
+    <a href="https://wa.me/56931488104?text=Hola!%20me%20interesa%20comprar%20el%20combo%20de%20Cera%20y%20Polvo." target="_blank" class="barber-wsp-btn" style="margin-top: 20px;">
+        <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+    </a>
+</div>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX (Para ampliar las fotos de los productos) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <button class="lb-btn lb-prev" onclick="changeImage(-1)">&#10218;</button>
+        <img class="lightbox-content" id="full-img" alt="Vista ampliada">
+        <button class="lb-btn lb-next" onclick="changeImage(1)">&#10219;</button>
+    </div>
+
+    <!-- FOOTER PREMIUM -->
+    <footer class="luxury-footer">
+        <div class="footer-content">
+            <img src="logo2.jpeg" alt="Logo Liberty" class="footer-logo-img">
+            <p class="footer-rights">&copy; 2026 Liberty Barber Shop. Todos los derechos reservados.</p>
+            <p class="dev-credits">Diseño exclusivo por Nivvux</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
