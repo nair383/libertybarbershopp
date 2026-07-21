@@ -2042,3 +2042,6 @@ img, video, iframe {
 @media (max-width: 600px) {
     .lb-btn { font-size: 1.2rem; padding: 5px 12px; }
 }
+.section-wrapper {
+    padding: 120px 0 40px; /* Aumentamos el padding superior de 80px a 120px */
+}
